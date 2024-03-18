@@ -1,17 +1,21 @@
- const form = document.querySelectorAll('form')
- const yourName = document.getElementById("#yName");
- const loverName = document.getElementById("#lName");
- const result = document.getElementById('#result')
- const random = Math.floor(Math.random()*100);
- console.log(random)
- 
+const form = document.querySelector('form');
+    
+    form.addEventListener('submit', function (e){
+        e.preventDefault()
+        const yourName = document.querySelector("#yName").value;
+        const loverName = document.querySelector("#lName").value;
+        const result = document.querySelector("#result");
+        const random = Math.floor(Math.random() * 100).toFixed(2);
 
- 
- function calc(){
-    form.forEach((i)=>{
-        i[0].addEventListener('click', function(){
-            alert(i.ATTRIBUTE_NODE)
-        })
-        console.log(i)
-    })
- }
+        if (yourName && loverName == "") {
+            result.innerHTML = `enter a valid user name`
+        }else{
+
+        result.innerHTML = `${yourName} your precentage with ${loverName} is ${random}`
+        yourName.value = ""
+        loverName.value = ""
+    }
+
+    });
+    
+

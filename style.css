@@ -1,11 +1,62 @@
-body {
-    text-align: center;
-    justify-content: center;
-    height: 100vh;
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
- #calc{
-    border-radius: 25px;
-    background-color: red;
-    color: white;
+#particles-js{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(rgba(134, 21, 21, 0.5), rgba(134, 21, 21, 0.5)),url("love.jpg");
+    background-repeat: no-repeat;
+    background-size:cover ;
+    background-position: 50% 50%;
+}
+form{
+    position: absolute;
+    top: 20%;
+    left: 40%;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+input[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
     border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+#result{
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgb(238, 140, 138);
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    text-align: center;
+    color: rgb(214, 50, 48);
+    
 }

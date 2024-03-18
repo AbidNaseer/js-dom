@@ -1,27 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+<head >
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    
     <title>DOM Project</title>
 </head>
 <body>
-    <form method="submit">
-        <label>Your name :</label>
-        <input type="text" id="yName">
-        <label>Lover name :</label>
-        <input type="text" id="lName">
-        <input type="submit" value="calculate love" id="calc">
-    </form>
+    <div id="particles-js">
+        <form>
+            <label for="yName">Your Name :</label>
+            <input type="text" id="yName" placeholder="enter your name here">
+            <br>
+            <label for="yName">lover Name :</label>
+            <input type="text" id="lName" placeholder="enter your name here">
+            <br>
+            <input type="submit" value="calculate">
+        </form>
 
-    <div id="result">
-        
-    </div>
+        <div id="result"></div>
+
+        </div>
+    
 
 
 
-
+    <script src="particles.js"></script>
+    <script src="app.js"></script>
     <script src="index.js"></script>
 </body>
 </html>
