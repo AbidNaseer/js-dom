@@ -15,7 +15,7 @@ form.addEventListener("submit", function (e) {
           }, 3000);
         }
         else{
-          result.innerHTML = `enter a valid user name`
+          result.innerHTML = `enter a valid name`
           setInterval(() => {
             location.reload()
           }, 2000);
